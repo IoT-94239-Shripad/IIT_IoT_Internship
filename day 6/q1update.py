@@ -27,7 +27,6 @@ SET temperature = %s,
     timestamp = %s
 WHERE id = %s
 """
-
 # Execute query
 cursor.execute(query, (temperature, humidity, timestamp, id))
 connection.commit()
